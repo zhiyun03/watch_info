@@ -95,7 +95,7 @@ vercel --prod
      "framework": "vite",
      "functions": {
        "api/**/*.ts": {
-         "runtime": "@vercel/node@3"
+         "runtime": "nodejs20.x"
        }
      }
    }
