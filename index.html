@@ -11,6 +11,7 @@
       <header>
         <h1>🦔 猹评导出工具</h1>
         <p class="subtitle">从观猹平台导出你的所有猹评和讨论数据</p>
+        <button id="prompt-btn" class="secondary-btn">📝 月报配方</button>
       </header>
 
       <main>
@@ -69,6 +70,24 @@
         <p>数据来源：<a href="https://watcha.cn" target="_blank">观猹 watcha.cn</a></p>
       </footer>
     </div>
+
+    <!-- 月报配方弹窗 -->
+    <div id="prompt-modal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>📝 观猹AI洞察月报配方</h2>
+          <button id="close-modal" class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <pre id="prompt-text" class="prompt-text"></pre>
+        </div>
+        <div class="modal-footer">
+          <button id="copy-prompt-btn" class="primary-btn">📋 复制到剪贴板</button>
+          <span id="copy-success" class="copy-success hidden">✓ 已复制</span>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
